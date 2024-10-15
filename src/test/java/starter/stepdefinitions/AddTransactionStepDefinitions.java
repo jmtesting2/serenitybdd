@@ -23,6 +23,7 @@ import java.util.List;
 
 public class AddTransactionStepDefinitions {
 
+
     @Given("{actor} is logged into the application")
    public void isLoggedIntoTheApplication(Actor actor, DataTable userLogin){
         LoginModel loginModel = GetInfoFromTable.getLoginCredentials(userLogin);
