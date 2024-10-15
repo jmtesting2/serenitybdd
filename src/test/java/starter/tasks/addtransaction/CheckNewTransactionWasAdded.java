@@ -12,7 +12,7 @@ public class CheckNewTransactionWasAdded implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
 
-                Ensure.that(GetTransactionInfo.getDescription()).contains("jkltesting description"),
+                Ensure.that(GetTransactionInfo.getDescription()).contains("testing description"),
 
                 Ensure.that(AddTransactionPage.TRANSACTIONS_TABLE)
                         .text().contains("500")
